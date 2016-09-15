@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BlackTopMost
@@ -15,6 +8,18 @@ namespace BlackTopMost
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle == FormBorderStyle.SizableToolWindow ?
+                FormBorderStyle.None :
+                FormBorderStyle.SizableToolWindow;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TopMost = !TopMost;
         }
     }
 }
